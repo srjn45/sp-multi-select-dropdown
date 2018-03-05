@@ -35,10 +35,10 @@ import { SpMultiSelectDropdownModule } from 'sp-multi-select-dropdown';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once your library is imported, you can use its SpMultiSelectDropdown in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
+<!-- You can now use SpMultiSelectDropdown component in app.component.html -->
 <h1>
   {{title}}
 </h1>
