@@ -1,0 +1,28 @@
+{
+  "name": "sp-multi-select-dropdown",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srjn45/sp-multi-select-dropdown"
+  },
+  "author": {
+    "name": "srjn45",
+    "email": "srajanpathak45@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srjn45/sp-multi-select-dropdown/issues"
+  },
+  "main": "sp-multi-select-dropdown.umd.js",
+  "module": "sp-multi-select-dropdown.js",
+  "jsnext:main": "sp-multi-select-dropdown.js",
+  "typings": "sp-multi-select-dropdown.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
