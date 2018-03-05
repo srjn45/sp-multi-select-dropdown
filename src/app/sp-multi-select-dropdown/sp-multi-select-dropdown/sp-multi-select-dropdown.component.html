@@ -9,7 +9,7 @@
     <mat-chip-list color="primary" #chipList>
       <mat-chip color="primary" *ngFor="let item of selectedItems" [selectable]="selectable" [removable]="removable" (remove)="remove(item)"
         (click)="$event.stopPropagation()">
-        {{item.name}}
+        {{item.name.replace(' ','&nbsp;')}}
         <mat-icon color="warn" matChipRemove *ngIf="removable">cancel</mat-icon>
       </mat-chip>
     </mat-chip-list>
@@ -25,7 +25,7 @@
   <div class="dropDown" *ngIf="dropDown">
     <mat-selection-list #list (selectionChange)="onSelect(list.selectedOptions.selected)">
       <mat-list-option *ngFor="let item of items" [value]="item" [selected]="item.selected">
-        {{item.name}}
+        {{item.name.replace(' ','&nbsp;')}}
       </mat-list-option>
     </mat-selection-list>
   </div>
