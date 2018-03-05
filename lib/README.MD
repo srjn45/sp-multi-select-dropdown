@@ -8,14 +8,6 @@ To install this library, run:
 $ npm install sp-multi-select-dropdown --save
 ```
 
-## Consuming your library
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install sp-multi-select-dropdown
-```
-
 and then from your Angular `AppModule`:
 
 ```typescript
@@ -24,8 +16,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'sp-multi-select-dropdown';
+// Import SpMultiSelectDropdownModule
+import { SpMultiSelectDropdownModule } from 'sp-multi-select-dropdown';
 
 @NgModule({
   declarations: [
@@ -34,8 +26,8 @@ import { SampleModule } from 'sp-multi-select-dropdown';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    LibraryModule
+    // Specify SpMultiSelectDropdownModule as an import
+    SpMultiSelectDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -50,7 +42,7 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<sp-multi-select-dropdown [items]="items" (change)="onChange($event)"></sp-multi-select-dropdown>
 ```
 
 ## Development
