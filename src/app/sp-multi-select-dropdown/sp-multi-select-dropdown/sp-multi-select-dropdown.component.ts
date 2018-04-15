@@ -18,17 +18,17 @@ export class SpMultiSelectDropdownComponent implements OnInit {
 
   @Output() public change: EventEmitter<Item[]> = new EventEmitter<Item[]>();
 
-  visible: boolean = true;
-  selectable: boolean = false;
-  removable: boolean = true;
+  visible = true;
+  selectable = false;
+  removable = true;
 
-  public dropDown: boolean = false;
+  public dropDown = false;
 
 
   constructor() { }
 
   ngOnInit() {
-    this.selectedItems = this.items.filter(x => x.selected == true);
+    this.selectedItems = this.items.filter(x => x.selected === true);
     this.chipsDiv = this.chipList._elementRef.nativeElement.children[0];
   }
 
