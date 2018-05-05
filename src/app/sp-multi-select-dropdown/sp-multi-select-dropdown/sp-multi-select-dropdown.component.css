@@ -3,38 +3,53 @@
 }
 
 .full-width {
-    width: 100%;
-  }
-  .pointer {
-    cursor: pointer;
-  }
-  .dropDown {
-    background: white;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    box-shadow: 0px 1px 2px 0px grey;
-    z-index: 1010;
-  }
-  .cvr-screen {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
-  }
-  .liftup {
-    z-index: 1010;
-  }
-  
-  input.mat-chip-input {
-    display: none !important;
-  }
-  
-  ::ng-deep .mat-chip-list-wrapper {
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    overflow: hidden;
-    height: 32px;
-  }
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.dropDown {
+  background: white;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px grey;
+  z-index: 1010;
+  overflow: hidden;
+}
+
+.cvr-screen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.liftup {
+  z-index: 1010;
+}
+
+/* input.mat-chip-input {
+  display: none !important;
+} */
+
+::ng-deep .mat-chip-list-wrapper {
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  overflow: hidden;
+  height: 32px;
+}
+
+.slideUp {
+  height: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+* {
+  transition: all 0.3s;
+}
