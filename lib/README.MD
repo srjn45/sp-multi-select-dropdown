@@ -42,7 +42,7 @@ Once your library is imported, you can use its SpMultiSelectDropdown in your Ang
 <h1>
   {{title}}
 </h1>
-<sp-multi-select-dropdown [items]="items" (change)="onChange($event)"></sp-multi-select-dropdown>
+<sp-multi-select-dropdown [placeholder]="'placeholder text'" [items]="items" (change)="onChange($event)"></sp-multi-select-dropdown>
 ```
 
 ## Development
@@ -62,3 +62,9 @@ $ npm run lint
 ## License
 
 MIT © [srjn45](mailto:srajanpathak45@gmail.com)
+
+## Change Log
+
+### 1.1.2
+
+> added placeholder

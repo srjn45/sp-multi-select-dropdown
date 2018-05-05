@@ -12,6 +12,7 @@
         {{item.name.replace(' ','&nbsp;')}}
         <mat-icon color="warn" matChipRemove *ngIf="removable">cancel</mat-icon>
       </mat-chip>
+      <input mat-input [placeholder]="placeholder" [matChipInputFor]="chipList" [readonly]=true/>
     </mat-chip-list>
 
     <button type="button" matSuffix mat-icon-button (click)="scrollRight($event)">
@@ -22,7 +23,8 @@
       <mat-icon *ngIf="dropDown" matSuffix color="primary">arrow_drop_up</mat-icon>
     </button>
   </mat-form-field>
-  <div class="dropDown" *ngIf="dropDown">
+  <!-- <div class="dropDown" *ngIf="dropDown"> -->
+  <div class="dropDown" [class.slideUp]="!dropDown">
     <mat-selection-list #list (selectionChange)="onSelect(list.selectedOptions.selected)">
       <mat-list-option *ngFor="let item of items" [value]="item" [selected]="item.selected">
         {{item.name.replace(' ','&nbsp;')}}

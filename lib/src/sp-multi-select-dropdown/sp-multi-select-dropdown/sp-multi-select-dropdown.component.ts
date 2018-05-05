@@ -9,6 +9,8 @@ import { MatListOption } from '@angular/material';
 })
 export class SpMultiSelectDropdownComponent implements OnInit {
 
+  @Input() placeholder: string;
+
   @ViewChild('chipList')
   public chipList: any;
   private chipsDiv: HTMLDivElement;
