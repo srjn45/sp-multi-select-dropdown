@@ -65,6 +65,10 @@ MIT © [srjn45](mailto:srajanpathak45@gmail.com)
 
 ## Change Log
 
+### 1.1.3
+
+> added keywords
+
 ### 1.1.2
 
 > added placeholder
